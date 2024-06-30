@@ -4,18 +4,18 @@
 
 It was developed as a mentoring project over a semester at the Digital Ideation programme at Lucerne University of Applied Sciences. 
 
-<table style="width: 50px;">
+<table>
     <tr>
         <th style="text-align: center; border: none;">unkissed</th>
         <th style="text-align: center; border: none;">kissed</th>
     </tr>
     <tr>
-        <th style="text-align: center; border: none;"><img src="assets/osculate_nft_unkissed.svg" alt="SVG 1" ></th>
-        <th style="text-align: center; border: none;"><img src="assets/osculate_nft_kissed.svg" alt="SVG 2" ></th>
+        <th style="text-align: center; border: none;"><img src="assets/osculate_nft_unkissed.svg" alt="SVG 1" style="width: 60%" ></th>
+        <th style="text-align: center; border: none;"><img src="assets/osculate_nft_kissed.svg" alt="SVG 2" style="width: 60%"></th>
     </tr>
     <tr>
-        <th style="text-align: center; border: none;"><img src="assets/osculate_nft_unkissed_2.svg" alt="SVG 3"></th>
-        <th style="text-align: center; border: none;"><img src="assets/osculate_nft_kissed_2.svg" alt="SVG 4" ></th>
+        <th style="text-align: center; border: none;"><img src="assets/osculate_nft_unkissed_2.svg" alt="SVG 3" style="width: 60%"></th>
+        <th style="text-align: center; border: none;"><img src="assets/osculate_nft_kissed_2.svg" alt="SVG 4" style="width: 60%"></th>
     </tr>
 </table>
 
