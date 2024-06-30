@@ -4,18 +4,18 @@
 
 It was developed as a mentoring project over a semester at the Digital Ideation programme at Lucerne University of Applied Sciences. 
 
-<table style="width: 50%;">
+<table>
     <tr>
         <th style="text-align: center; border: none;">unkissed</th>
         <th style="text-align: center; border: none;">kissed</th>
     </tr>
     <tr>
-        <th style="text-align: center; border: none;"><img src="assets/osculate_nft_unkissed.svg" alt="SVG 1" ></th>
-        <th style="text-align: center; border: none;"><img src="assets/osculate_nft_kissed.svg" alt="SVG 2" ></th>
+        <th style="text-align: center; border: none;"><img src="assets/osculate_nft_unkissed.svg" alt="SVG 1" style="width: 60%" ></th>
+        <th style="text-align: center; border: none;"><img src="assets/osculate_nft_kissed.svg" alt="SVG 2" style="width: 60%"></th>
     </tr>
     <tr>
-        <th style="text-align: center; border: none;"><img src="assets/osculate_nft_unkissed_2.svg" alt="SVG 3"></th>
-        <th style="text-align: center; border: none;"><img src="assets/osculate_nft_kissed_2.svg" alt="SVG 4" ></th>
+        <th style="text-align: center; border: none;"><img src="assets/osculate_nft_unkissed_2.svg" alt="SVG 3" style="width: 60%"></th>
+        <th style="text-align: center; border: none;"><img src="assets/osculate_nft_kissed_2.svg" alt="SVG 4" style="width: 60%"></th>
     </tr>
 </table>
 
@@ -23,7 +23,7 @@ The NFT's metadata, which is generated on-chain, includes an SVG image containin
 
 ## How does it work?
 
-The contract mints the first token with the ciphertext "osculate" to the deployer's address.
+The contract mints the first token with the ciphertext `osculate` to the deployer's address.
 
 Upon initiating a mint (for 1 GWei), the last 8 lowercase characters of the minter's address are used as the key to Vigenère cipher the plaintext (which is also a ciphertext) of the previous - last minted - token. This triggers a "kiss" and the chain of ciphertexts continues.
 
@@ -56,17 +56,15 @@ plaintext                                        key        ciphered text
     e                                             b           →   ?  
 ```
 
-</br>
-We can use a Vigenère table with our alphabet to assist in finding the characters of the resulting ciphertext:
+We can use a Vigenère table with our alphabet to assist in finding the characters of the resulting ciphertext.
 
-<figure>
-<img src="assets/vigenere-cipher-alphabet-table-highlighted.png" alt="alph table" style="width: 60%; padding: 3% 0 0 0;">
-    <figcaption>Vigenère table for encryption or decryption</figcaption>
-</figure>
+#### Vigenère Table
+
+<img src="assets/vigenere-cipher-alphabet-table-highlighted.png" alt="alph table" style="width: 60%; padding: 3% 0 3% 0;">
 
 We look for the first character of `osculate` to cipher (`o`) in the first column and the first letter of the keyword `259aec9b` (`2`) in the first row. 
 
-The resulting character is "g".
+The resulting character is `g`.
 
 >**Resulting cipher text after repeating this step for all characters:** `gnbupcsf`.
 
@@ -84,6 +82,7 @@ The NFT's metadata is returned as a data URI with descriptions, the token's SVG 
     <figcaption>Browser showing metadata of the token with the tokenId 2.</figcaption>
 </figure>
 
+### Visual Characteristics
 The SVG image contains an Vigenère-table-inspired pattern of the text that the minter has ciphered with their address. The tokenId is used to generate token-specific settings for the SVG image. **This includes the pattern's ciphered text, the seed, the color, and the scale (definition) of the background pattern.**
 
 Each newly minted token's image has a normal heartbeat animation and the color's saturation value
