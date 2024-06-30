@@ -21,3 +21,7 @@ vigenere_table.html
 
 # Hardhat Ignition default folder for deployments against a local node
 ignition/deployments/chain-31337
+
+ignition/deployments/chain-11155111/artifacts
+ignition/deployments/chain-11155111/build-info
+ignition/deployments/chain-11155111/journal.jsonl
