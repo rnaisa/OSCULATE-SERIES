@@ -1,0 +1,22 @@
+{
+  "name": "osculate-contract",
+  "version": "1.0.0",
+  "description": "all files and tests related to the osculate contract",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx hardhat test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rnaisa/osculate-series.git"
+  },
+  "author": "rnaisa",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.5"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.2"
+  }
+}

@@ -1,0 +1,33 @@
+<svg width="450" height="450"
+    xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <filter id="displacementCircle">
+            <feTurbulence type="turbulence" baseFrequency="0.06" numOctaves="4" result="turbulence"  seed="31"/>
+            <feDisplacementMap in2="turbulence" in="SourceGraphic" scale="700" xChannelSelector="R" yChannelSelector="B"/>
+        </filter>
+        <circle id="circleEl" cx="-150" cy="-150" r="350" fill="hsl(0,0%,70%,0.8)" filter="url(#displacementCircle)" transform="rotate(180)">
+            <animate attributeName="fill" values="white;grey;white;grey;" dur="1.5s" repeatCount="indefinite"/>
+        </circle>
+        <filter id="compIn">
+            <feImage href="#circleEl" result="img"/>
+            <feComposite in="img" in2="SourceGraphic" operator="in"/>
+        </filter>
+        <g id="textGroup" dominant-baseline="central">
+        <rect x="0" y="50" width="100%" height="1"/>
+        <rect x="50" y="0" width="1" height="100%"/>
+        <text x="50%" y="25" textLength="93%" lengthAdjust="spacing" text-anchor="middle">_jf2p64x7</text>
+        <text x="50%" y="75" textLength="93%" lengthAdjust="spacing" text-anchor="middle">jjf2p64x7</text>
+        <text x="50%" y="125" textLength="93%" lengthAdjust="spacing" text-anchor="middle">ff2p64x7j</text>
+        <text x="50%" y="175" textLength="93%" lengthAdjust="spacing" text-anchor="middle">22p64x7jf</text>
+        <text x="50%" y="225" textLength="93%" lengthAdjust="spacing" text-anchor="middle">pp64x7jf2</text>
+        <text x="50%" y="275" textLength="93%" lengthAdjust="spacing" text-anchor="middle">664x7jf2p</text>
+        <text x="50%" y="325" textLength="93%" lengthAdjust="spacing" text-anchor="middle">44x7jf2p6</text>
+        <text x="50%" y="375" textLength="93%" lengthAdjust="spacing" text-anchor="middle">xx7jf2p64</text>
+        <text x="50%" y="425" textLength="93%" lengthAdjust="spacing" text-anchor="middle">77jf2p64x</text>
+    </g>
+    </defs>
+    <rect width="100%" height="100%" fill="hsl(0, 0%, 5%, 1)"/>
+    <circle cx="500" cy="250" r="500" fill="none" stroke="hsl(180,0%,20%,1)" stroke-width="50" filter="url(#displacementCircle)" transform="scale(2.5)"/>
+    <use href="#textGroup" fill="hsl(0,0%,100%, 1)" filter="url(#compIn)" style="font:27px Courier New;"/>
+    <use href="#textGroup" fill="hsl(0,0%,50%, 0.6)" style="font:27px Courier New;"/>
+</svg>
