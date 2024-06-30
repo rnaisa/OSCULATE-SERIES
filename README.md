@@ -21,6 +21,12 @@ It was developed as a mentoring project over a semester at the Digital Ideation 
 
 The NFT's metadata, which is generated on-chain, includes an SVG image containing the ciphertext and utilizes the tokenId to create deterministic visual characteristics. The metadata changes when the requirements for being "kissed" are met.
 
+## Sepolia Testnet
+
+The contract has been deployed to the Sepolia testnet with the address `0x4dc766D962bCee4C45596FC9b601c187418d8e86` and can be accessed and interacted with on [sepolia.etherscan.io](https://sepolia.etherscan.io/address/0x4dc766D962bCee4C45596FC9b601c187418d8e86).
+
+The OSCULATED NFTs on Sepolia are also on the [OpenSea testnet platform](https://testnets.opensea.io/assets/sepolia//0x4dc766D962bCee4C45596FC9b601c187418d8e86).
+
 ## How does it work?
 
 The contract mints the first token with the ciphertext `osculate` to the deployer's address.
