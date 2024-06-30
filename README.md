@@ -95,14 +95,15 @@ Each newly minted token's image has a normal heartbeat animation and the color's
 set to 0 (black & white), which changes once the token has been kissed. If kissed, the SVG image will have a faster heartbeat animation and the color appears.
   
 
-## Deployment Demo
+## Local Deployment Demo
 
-This contract has been developed with the Ethereum development environment [Hardhat](https://hardhat.org/) and [remix.ethereum.org](https://remix.ethereum.org/). Remix offers an IDE with tutorials that allows easy smart contract deployments and interactions with it.
+This contract has been developed with the Ethereum development environment [Hardhat](https://hardhat.org/) and [remix.ethereum.org](https://remix.ethereum.org/). Remix offers an IDE with tutorials that allows easy smart contract deployments and interactions with it by simulating a blockchain environment locally.
 
 While this repository stores all files and tests related to the contract, any interactions with it are the easiest to do and visualized in the Remix IDE!
 
+Interactions are also possible on the Sepolia testnet via Etherscan, but require a wallet and Sepolia ETH.
 
-#### To try the **Osculate** contract yourself, follow these steps:
+#### To try the **Osculate** contract locally, follow these steps:
 
 - Open [remix.ethereum.org](https://remix.ethereum.org/)
 - Load the `Osculate.sol` contract file from the `contracts` folder into the IDE, compile it and deploy it on the default **Remix VM (Cancun) ONLY!**
